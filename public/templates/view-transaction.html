@@ -1,9 +1,7 @@
-<h4 class="text-center current-page">Transação detalhada</h4>
+<h4 class="text-center current-page">View Receipt</h4>
 <receipt transaction="transaction"> </receipt>
 
 <div class="text-center">
-  <checkout
-    cart-total="transaction.total"
-    print-receipt="printReceipt(data)">
-  </checkout>
+    <checkout cart-total="transaction.total" print-receipt="printReceipt(data)">
+    </checkout>
 </div>

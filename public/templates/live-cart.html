@@ -1,66 +1,64 @@
 <div class="col-md-5 pull-right">
 
-	<receipt
-		ng-show="liveCart.products.length"
-		transaction="liveCart">
-	</receipt>
+    <receipt ng-show="liveCart.products.length" transaction="liveCart">
+    </receipt>
 
-	<div ng-hide="liveCart.products.length" style="margin: 0 auto; float: none;">
-		<div class="alert alert-warning text-center" role="alert">
-		  <strong>Inativo</strong> Nenhuma transação acontecendo no momento.
-		</div>
-	</div>
+    <div ng-hide="liveCart.products.length" style="margin: 0 auto; float: none;">
+        <div class="alert alert-warning text-center" role="alert">
+            <strong>Inactive</strong> No items added at the current moment.
+        </div>
+    </div>
 
 </div>
 
 <div class="col-md-5 pull-left">
 
-	<div class="panel panel-default">
+    <div class="panel panel-default">
 
-		<div class="panel-heading lead text-center">
-			Transações recentes
-		</div>
+        <div class="panel-heading lead text-center">
+            Recent Transactions
+        </div>
 
-		<div class="panel-body">
+        <div class="panel-body">
 
-			<div class="text-center">
-				<span>Total de vendas recebidas em {{ todayDate }}</span>
-				<br/>
-				<span class="text-success checkout-total-price">
+            <div class="text-center">
+                <span>Today's Sales {{ todayDate }}</span>
+                <br/>
+                <span class="text-success checkout-total-price">
 					$<span odometer="dayTotal"></span>
-				</span>
-			</div>
+                </span>
+            </div>
 
-			<div class="text-center">
-				<span>Vendas de {{ todayDate }} a serem recebidas</span>
-				<br/>
-				<span class="text-success checkout-total-price">
+            <div class="text-center">
+                <span>sales of {{ todayDate }} to be received </span>
+                <br/>
+                <span class="text-success checkout-total-price">
 					$<span odometer="dayToBeReceived"></span>
-				</span>
-			</div>
+                </span>
+            </div>
 
-			<table class="table table-hover table-striped">
-				<thead>
-					<tr>
-						<th>Hora</th>
-						<th>Total</th>
-						<th>Status</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr ng-repeat="transaction in recentTransactions">
-						<td class="col-md-2">
-							<a href="#/transaction/{{ transaction._id }}">{{ transaction.date | date:'short' }}</a>
-						</td>
-						<td class="col-md-2"> {{ transaction.total | currency }} </td>
-						<td ng-if="transaction.status === 0" class="col-md-2"> Em aberto </td>
-						<td ng-if="transaction.status === 1" class="col-md-2"> Pago </td>
-						<td ng-if="transaction.status === 2" class="col-md-2"> A receber </td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="transaction in recentTransactions">
+                        <td class="col-md-2">
+                            <a href="#/transaction/{{ transaction._id }}">{{ transaction.date | date:'short' }}</a>
+                        </td>
+                        <td class="col-md-2"> {{ transaction.total | currency }} </td>
+                        <td ng-if="transaction.status === 0" class="col-md-2"> Recieved </td>
+                        <td ng-if="transaction.status === 1" class="col-md-2"> Paid out </td>
+                        <td ng-if="transaction.status === 2" class="col-md-2"> Opened </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-	</div>
+    </div>
 
 </div>
