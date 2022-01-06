@@ -17,6 +17,27 @@ app.get('/', function(req, res) {
     res.sendFile(path.resolve(__dirname, publicPath, 'index.html'));
 });
 
+
+app.get("/download/index", function(req, res) {
+    console.log('start download')
+    const file = "./server/databases/index.db";
+    res.download(file);
+    console.log('end  download')
+});
+app.get("/download/inventory", function(req, res) {
+    console.log('start download')
+    const file = "./server/databases/inventory.db";
+    res.download(file);
+    console.log('end  download')
+});
+app.get("/download/transactions", function(req, res) {
+    console.log('start download')
+    const file = "./server/databases/transactions.db";
+    res.download(file);
+    console.log('end  download')
+});
+
+
 app.use('/api', require('./api'));
 
 // Websocket logic for Live Cart

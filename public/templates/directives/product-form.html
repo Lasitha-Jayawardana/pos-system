@@ -3,28 +3,28 @@
     <div class="form-group" ng-class="{ 'has-error': newProductForm.barcode.$error.required }">
         <label class="col-md-4 control-label" for="barcode">Barcode</label>
         <div class="col-md-4">
-            <input id="barcode" name="barcode" placeholder="Código de barras" class="form-control" ng-model="product.barcode" ng-keypress="tabOnEnter($event)" required>
+            <input id="barcode" name="barcode" placeholder="Barcode" class="form-control" ng-model="product.barcode" ng-keypress="tabOnEnter($event)" required>
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-md-4 control-label" for="name">Name</label>
         <div class="col-md-4">
-            <input name="name" placeholder="Nome" class="form-control" ng-model="product.name">
+            <input name="name" placeholder="Name" class="form-control" ng-model="product.name">
         </div>
     </div>
 
     <div class="form-group" ng-class="{ 'has-error': newProductForm.price.$error.required }">
         <label class="col-md-4 control-label" for="price">Price</label>
         <div class="col-md-4">
-            <input name="price" placeholder="Preço" class="form-control" type="number" step="any" min="0" ng-model="product.price" required>
+            <input name="price" placeholder="price" class="form-control" type="number" step="any" min="0" ng-model="product.price" required>
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-md-4 control-label" for="quantity_on_hand">Quantity On Hand</label>
         <div class="col-md-4">
-            <input name="quantity_on_hand" placeholder="Quantidade no Estoque" class="form-control" type="number" step="any" min="0" ng-model="product.quantity_on_hand">
+            <input name="quantity_on_hand" placeholder="Quantity On Hand" class="form-control" type="number" step="any" min="0" ng-model="product.quantity_on_hand">
         </div>
     </div>
 
@@ -38,7 +38,7 @@
     <br/> <br/> <br/>
     <div class="text-center">
         <button type="submit" ng-disabled="!newProductForm.$valid || newProductForm.$pristine" class="btn btn-success btn-lg col-centered">
-			Cadastrar
+			Register 
 		</button>
     </div>
 </form>

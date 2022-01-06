@@ -1,26 +1,26 @@
 body {
-	background-color: oldlace;
+    background-color: oldlace;
 }
 
 .no-display {
-	display: none !important;
+    display: none !important;
 }
 
 .not-home {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .home-page .large-text {
-	margin-top: 6%;
-	font-size: 70px;
+    margin-top: 6%;
+    font-size: 70px;
 }
 
 .home-page img {
-	max-height: 100px;
+    max-height: 100px;
 }
 
 * {
-  font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .col-centered {
@@ -29,140 +29,140 @@ body {
 }
 
 .modal.fade {
-   -webkit-transition: opacity 0.10s linear;
-      -moz-transition: opacity 0.10s linear;
-       -ms-transition: opacity 0.10s linear;
-        -o-transition: opacity 0.10s linear;
-           transition: opacity 0.10s linear;
- }
+    -webkit-transition: opacity 0.10s linear;
+    -moz-transition: opacity 0.10s linear;
+    -ms-transition: opacity 0.10s linear;
+    -o-transition: opacity 0.10s linear;
+    transition: opacity 0.10s linear;
+}
 
 legend {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .table>tbody {
-	max-height: 800px;
-	overflow: scroll;
+    max-height: 800px;
+    overflow: scroll;
 }
 
 .table>tbody>tr>td {
-	border: none;
+    border: none;
 }
 
 .table>tbody>tr>td:first-child,
 .table>thead>tr>th:first-child {
-	padding-left: 40px;
+    padding-left: 40px;
 }
 
 .table>tbody>tr>td,
 .table>thead>tr>th {
-	padding-top: 20px;
-	padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 table thead th {
-	font-size: 14px;
-	font-weight: bolder;
+    font-size: 14px;
+    font-weight: bolder;
 }
 
 .table>thead>tr>th {
-	border: none;
+    border: none;
 }
 
 table.pos tbody tr td input {
-	border: none;
-	background: transparent;
-	width: 100%;
-	border-bottom: 1px dashed black;
-	text-align: center;
+    border: none;
+    background: transparent;
+    width: 100%;
+    border-bottom: 1px dashed black;
+    text-align: center;
 }
 
 table.pos tbody tr td input:focus {
-	outline-color: transparent;
+    outline-color: transparent;
 }
 
 table.pos tbody tr td input::-webkit-outer-spin-button,
 table.pos tbody tr td input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 table.receipt>tbody>tr>td,
 table.receipt>tfoot>tr>td {
-	padding: 10px;
+    padding: 10px;
 }
 
 h4.current-page {
-	margin-top: 30px;
-	margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 nav-menu {
-	float: none;
-	margin: 0 auto;
-	text-align: center;
-	margin-bottom: 50px;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 nav-menu h1 {
-	font-size: 50px;
+    font-size: 50px;
 }
 
 ul.nav-menu {
-	margin-top: 25px;
-	margin-bottom: 45px;
+    margin-top: 25px;
+    margin-bottom: 45px;
 }
 
 ul.nav-menu li {
-	display: inline;
-	margin-left: 25px;
-	margin-right: 25px;
-	text-decoration: underline;
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: underline;
 }
 
 ul.nav-menu li a {
-	list-style-type: none;
- 	display: inline;
+    list-style-type: none;
+    display: inline;
 }
 
 ul.nav-menu li a.active {
-	font-style: italic;
-	color: #999;
+    font-style: italic;
+    color: #999;
 }
 
 ul.nav-menu li a h3 {
-	display: inline;
+    display: inline;
 }
 
 #orderButton {
-	padding: 0 30px 0 30px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 100%;
-	border-radius: 0;
-	font-size: 25px;
+    /* padding: 0 30px 0 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 0;
+    font-size: 25px; */
 }
 
 #checkoutButton {
-	padding: 0 30px 0 30px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 100%;
-	border-radius: 0;
-	font-size: 25px;
+    padding: 0 30px 0 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 0;
+    font-size: 25px;
 }
 
-#product-entry
-{
-	font-size:40pt;
-	height:80px;
+#product-entry {
+    font-size: 40pt;
+    height: 80px;
 }
 
 .checkout-total-price {
-	display: inline-flex;
-	font-size: 35px;
-	letter-spacing: 3px;
+    display: inline-flex;
+    font-size: 35px;
+    letter-spacing: 3px;
 }
