@@ -1,16 +1,7 @@
 <button class="btn lead" id="checkoutButton" ng-click="focusPayment()" ng-disabled="cartTotal === 0" data-toggle="modal" data-target="#checkoutModal">
     <i class="glyphicon glyphicon-usd"></i>
-    <br/>
-    <br/>
-    P<br/>
-    a<br/>
-    g<br/>
-    a<br/>
-    m<br/>
-    e<br/>
-    n<br/>
-    t<br/>
-    o
+  Checkout
+   
 </button>
 
 <style>
@@ -23,7 +14,7 @@
         float: none;
         margin: 0 auto;
         margin-bottom: 25px;
-        max-width: 50%;
+        max-width: 80%;
     }
 </style>
 
@@ -43,7 +34,7 @@
 
                     <form class="form-horizontal" name="checkoutForm" ng-submit="checkoutForm.$valid && print()">
 
-                        <div class="form-group">
+                        <div style="max-width: 80%;" class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">$</div>
                                 <input type="number" id="checkoutDiscountAmount" class="form-control input-lg" name="discount" step="any" min="0" ng-model="discountAmount" ng-init="discountAmount=0" />
@@ -54,7 +45,7 @@
                             <div class="form-group" ng-class="{ 'has-error': checkoutForm.payment.$error.required }">
                                 <div class="input-group">
                                     <div class="input-group-addon">Amount paid</div>
-                                    <input type="number" id="checkoutPaymentAmount" class="form-control input-lg" name="payment" step="any" min="0" ng-model="paymentAmount" required/>
+                                    <input style="min-width: 80px;" type="number" id="checkoutPaymentAmount" class="form-control input-lg" name="payment" step="any" min="0" ng-model="paymentAmount" required/>
                                 </div>
                             </div>
 

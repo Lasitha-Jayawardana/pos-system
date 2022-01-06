@@ -3,11 +3,11 @@
     <receipt ng-show="liveCart.products.length" transaction="liveCart">
     </receipt>
 
-    <div ng-hide="liveCart.products.length" style="margin: 0 auto; float: none;">
+    <!-- <div ng-hide="liveCart.products.length" style="margin: 0 auto; float: none;">
         <div class="alert alert-warning text-center" role="alert">
             <strong>Inactive</strong> No items added at the current moment.
         </div>
-    </div>
+    </div> -->
 
 </div>
 
@@ -25,7 +25,7 @@
                 <span>Today's Sales {{ todayDate }}</span>
                 <br/>
                 <span class="text-success checkout-total-price">
-					$<span odometer="dayTotal"></span>
+					RS: <span odometer="dayTotal"></span>
                 </span>
             </div>
 
@@ -33,7 +33,7 @@
                 <span>sales of {{ todayDate }} to be received </span>
                 <br/>
                 <span class="text-success checkout-total-price">
-					$<span odometer="dayToBeReceived"></span>
+					RS: <span odometer="dayToBeReceived"></span>
                 </span>
             </div>
 
