@@ -12,7 +12,25 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="odometer/themes/odometer-theme-minimal.css" />
 </head>
+<style>
+    footer {
+        position: relative;
+        height: 100px;
+        width: 100%;
+        line-height: 100px;
+bottom: 0;
+    }
 
+    p.copyright {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        line-height: 100px;
+        font-size: 0.7em;
+        text-align: center;
+    
+    }
+</style>
 <body ng-controller="body" class="container" ng-class="{ 'not-home': !onHomePage() }">
 
     <nav-menu ng-hide="onHomePage()"></nav-menu>
@@ -37,7 +55,7 @@
     <script src="/js/services.js"></script>
     <script src="/js/directives.js"></script>
 
-    <footer style="margin: auto;text-align: center;">&copy; Copyright 2022 Lasitha</footer>
+    <footer style="margin: auto;text-align: center;"><p>&copy; Copyright 2022 Lasitha</p></footer>
 </body>
 
 </html>
