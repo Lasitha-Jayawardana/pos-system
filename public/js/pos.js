@@ -29,7 +29,7 @@ var serverAddress;
 if (window.location.host === 'pos.dev')
     serverAddress = 'http://pos.dev';
 else
-    serverAddress = 'http://localhost:8080';
+    serverAddress = 'https://cafe-ceema.herokuapp.com';
 
 var socket = io.connect(serverAddress);
 

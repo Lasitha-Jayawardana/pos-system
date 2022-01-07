@@ -9,3 +9,4 @@ bower_components/*
 
 server/databases/inventory.db
 server/databases/transactions.db
+server/databases/index.db
