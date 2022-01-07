@@ -45,16 +45,16 @@
             <td class="col-md-2"> {{ product.name }} </td>
             <td class="col-md-1"> {{ product.price | currency }} </td>
             <td class="col-md-2">
-                <div style="display: flex;">
-                    <button class="btn btn-sm pull-left" ng-click="removeQuantity(product)" type="button" prevent-enter-fireing>
+                <div style="display: flex;flex-wrap: wrap;">
+                    <button style="margin: auto;" class="btn btn-sm pull-left" ng-click="removeQuantity(product)" type="button" prevent-enter-fireing>
 					<i class="glyphicon glyphicon-minus"></i>
 				</button>
 
-                    <div class="col-md-6">
+                    <div style="min-width: 20px;" class="">
                         <input type="number" class="" step="any" min="0" ng-model="product.quantity" ng-change="updateCartTotals()" required/>
                     </div>
 
-                    <button class="btn btn-sm pull-right" ng-click="addQuantity(product)" type="button" prevent-enter-fireing>
+                    <button style="margin: auto;" class="btn btn-sm pull-right" ng-click="addQuantity(product)" type="button" prevent-enter-fireing>
 					<i class="glyphicon glyphicon-plus"></i>
 				</button>
                 </div>

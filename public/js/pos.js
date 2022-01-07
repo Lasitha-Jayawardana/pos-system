@@ -25,9 +25,9 @@ var pos = angular.module('POS', [
 //////////////////////////////////////////////////
 
 var serverAddress;
-
-if (window.location.host === 'pos.dev')
-    serverAddress = 'http://pos.dev';
+console.log(window.location.host);
+if (window.location.host === 'localhost:8080')
+    serverAddress = 'http://localhost:8080';
 else
     serverAddress = 'https://cafe-ceema.herokuapp.com';
 
